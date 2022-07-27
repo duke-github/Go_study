@@ -1,0 +1,160 @@
+
+
+10000 次 10的并发量
+
+Server Software:
+Server Hostname:        127.0.0.1
+Server Port:            9090
+
+Document Path:          /
+Document Length:        12 bytes
+
+Concurrency Level:      10
+Time taken for tests:   6.000 seconds
+Complete requests:      10000
+Failed requests:        0
+Total transferred:      1290000 bytes
+HTML transferred:       120000 bytes
+Requests per second:    1666.77 [#/sec] (mean)
+Time per request:       6.000 [ms] (mean)
+Time per request:       0.600 [ms] (mean, across all concurrent requests)
+Transfer rate:          209.97 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.3      0       1
+Processing:     0    6   9.1      3     110
+Waiting:        0    6   9.1      3     110
+Total:          0    6   9.2      3     110
+
+Percentage of the requests served within a certain time (ms)
+  50%      3
+  66%      4
+  75%      5
+  80%      5
+  90%     13
+  95%     26
+  98%     38
+  99%     50
+ 100%    110 (longest request)
+
+10000 次 100 的并发量
+
+
+Server Software:
+Server Hostname:        127.0.0.1
+Server Port:            9090
+
+Document Path:          /
+Document Length:        12 bytes
+
+Concurrency Level:      100
+Time taken for tests:   6.104 seconds
+Complete requests:      10000
+Failed requests:        0
+Total transferred:      1290000 bytes
+HTML transferred:       120000 bytes
+Requests per second:    1638.16 [#/sec] (mean)
+Time per request:       61.044 [ms] (mean)
+Time per request:       0.610 [ms] (mean, across all concurrent requests)
+Transfer rate:          206.37 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.3      0       1
+Processing:     0   61  58.2     41     583
+Waiting:        0   60  58.1     41     583
+Total:          0   61  58.2     41     583
+
+Percentage of the requests served within a certain time (ms)
+  50%     41
+  66%     65
+  75%     82
+  80%     97
+  90%    137
+  95%    174
+  98%    229
+  99%    270
+ 100%    583 (longest request)
+
+10000次 200 的并发量
+
+Server Software:
+Server Hostname:        127.0.0.1
+Server Port:            9090
+
+Document Path:          /
+Document Length:        12 bytes
+
+Concurrency Level:      200
+Time taken for tests:   6.093 seconds
+Complete requests:      10000
+Failed requests:        0
+Total transferred:      1290000 bytes
+HTML transferred:       120000 bytes
+Requests per second:    1641.10 [#/sec] (mean)
+Time per request:       121.869 [ms] (mean)
+Time per request:       0.609 [ms] (mean, across all concurrent requests)
+Transfer rate:          206.74 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.3      0       2
+Processing:     0  120 107.8     83     906
+Waiting:        0  120 107.8     83     906
+Total:          0  121 107.8     83     907
+
+Percentage of the requests served within a certain time (ms)
+  50%     83
+  66%    132
+  75%    159
+  80%    185
+  90%    261
+  95%    337
+  98%    424
+  99%    500
+ 100%    907 (longest request)
+
+
+
+10000次请求 1000并发
+
+
+Server Software:
+Server Hostname:        127.0.0.1
+Server Port:            9090
+
+Document Path:          /
+Document Length:        12 bytes
+
+Concurrency Level:      1000
+Time taken for tests:   13.990 seconds
+Complete requests:      10000
+Failed requests:        0
+Total transferred:      1290000 bytes
+HTML transferred:       120000 bytes
+Requests per second:    714.80 [#/sec] (mean)
+Time per request:       1398.993 [ms] (mean)
+Time per request:       1.399 [ms] (mean, across all concurrent requests)
+Transfer rate:          90.05 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.3      0       1
+Processing:     1 1372 2968.7    314   12780
+Waiting:        1 1370 2969.0    312   12778
+Total:          1 1372 2968.7    314   12780
+
+Percentage of the requests served within a certain time (ms)
+  50%    314
+  66%    505
+  75%    660
+  80%    796
+  90%   9558
+  95%  10099
+  98%  10596
+  99%  10881
+ 100%  12780 (longest request)
+
+
+
